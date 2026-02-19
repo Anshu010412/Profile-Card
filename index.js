@@ -34,7 +34,7 @@ roleInput.addEventListener("input", () => {
 imageInput.addEventListener("input", () => {
   previewImg.src =
     imageInput.value ||
-    "https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg";
+    "url";
   animateCard();
 });
 
