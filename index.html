@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Input section-->
+        <div class="form">
+            <h2 class="profileName">PROFILE</h2>
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <input type="text" id="role" placeholder="Enter Role">
+            <input type="text" id="image" placeholder="Enter URL">
+            <textarea id="bio" placeholder="Enter Bio"></textarea>
+
+            <!--Theme section-->
+            <label for="theme">Theme</label>
+            <select id="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+
+            <!--Gradient section-->
+            <label for="gradient">Gradient</label>
+            <select id="gradient">
+                <option value="grad1">Blue Gradient</option>
+                <option value="grad2">Purple Gradient</option>
+                <option value="grad3">sunset Gradient</option>
+            </select>
+
+            <!--Template section-->
+            <label for="template">Template</label>
+            <select id="template">
+                <option value="template1">Template 1</option>
+                <option value="template2">Template 2</option>
+            </select>
+
+            <button onclick="downloadCard()">Download Card</button>
+        </div>
+
+        <!--Profile Section-->
+        <div class="card template1 grad1 light" id="card">
+            <img src="https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg" alt="Image"
+                id="previewImg">
+            <h3 id="previewName">Your Name</h3>
+            <p id="previewRole">Role</p>
+            <p id="previewBio">Bio</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  padding: 25px;
+}
+
+.profileName {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  width: 95%;
+  font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid orange;
+  }
+
+select {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px;
+  background-color: black;
+  color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 999px;
+  width: 100%;
+}
+
+/*Card Css*/
+.card {
+  padding: 16px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+  animation: pop 0.4s ease;
+}
+
+/*Animation*/
+@keyframes pop {
+  from {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*Theme*/
+.light {
+  color: black;
+}
+
+.dark {
+  color: white;
+  background: #1e1e1e;
+}
+
+/*Gradient*/
+.grad1 {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+}
+
+.grad2 {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
+
+.grad3 {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+/*Template*/
+.template1 {
+  border-radius: 15px;
+}
+
+.template2 {
+  border-radius: 30px;
+  transform: rotate(-2deg);
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  body {
+    padding: 35px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .form {
+    max-width: 250px;
+  }
+
+  input:focus {
+    outline: none;
+    border: 2px solid orange;
+  }
+
+  select {
+    width: 150px;
+  }
+
+  button {
+    width: auto;
+  }
+
+  .card {
+    width: 150px;
+    padding: 80px;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+}
